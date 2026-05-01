@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🎯 Timing Feedback
+#  Timing Feedback
 
-**A real-time hit timing overlay for osu! — powered by [tosu](https://github.com/KotRikD/tosu)**
+**A real-time hit timing overlay for osu!  powered by [tosu](https://github.com/KotRikD/tosu)**
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=flat-square)
 ![Compatible](https://img.shields.io/badge/compatible-tosu-orange?style=flat-square)
@@ -16,26 +16,26 @@ Works as an in-game overlay or OBS browser source.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎯 **Auto timing windows** — calculates Perfect window from game mode + OD + mods automatically
-- ✏️ **Custom timing window** — override with your own ±ms value
-- 🖼️ **Text or custom images** — use labels or your own transparent PNGs for Early/Late
-- 📐 **Hit error display** — exact ms offset with configurable decimal places
-- 🎨 **Full color control** — separate colors for Early, Late, and Perfect
-- 🔤 **Flexible fonts** — system font, Google Goldman, or load your own `.ttf`
-- ✨ **Text stroke** — thick black outline for readability on any background
-- 🎬 **Fade or snap** — smooth fade-out or instant disappear animation
-- 📏 **Position offsets** — move judgement text and ms text independently (X/Y)
-- ⚡ **osu! Lazer support** — detects floating-point hit errors automatically
+- **Auto timing windows**  calculates Perfect window from game mode + OD + mods automatically
+- **Custom timing window**  override with your own ±ms value
+- **Text or custom images**  use labels or your own transparent PNGs for Early/Late
+- **Hit error display**  exact ms offset with configurable decimal places
+- **Full color control**  separate colors for Early, Late, and Perfect
+- **Flexible fonts**  system font, Google Goldman, or load your own `.ttf`
+- **Text stroke**  thick black outline for readability on any background
+- **Fade or snap**  smooth fade-out or instant disappear animation
+- **Position offsets**  move judgement text and ms text independently (X/Y)
+- **osu! Lazer support**  detects floating-point hit errors automatically
 
 ---
 
-## 🚀 Installation
+## Installation
 
 1. **Download** this repository as a ZIP (or `git clone` it)
 2. **Place** the folder inside your tosu `plugins/` directory
-3. **Open** tosu → navigate to the Plugins / Counters page
+3. **Open** tosu  navigate to the Plugins / Counters page
 4. **Configure** settings to your preference (see below)
 5. **Add** the overlay URL as a Browser Source in OBS, or use it as an in-game overlay
 
@@ -43,7 +43,7 @@ Works as an in-game overlay or OBS browser source.
 
 ---
 
-## ⚙️ Settings
+## Settings
 
 <details>
 <summary><b>Timing Window</b></summary>
@@ -90,7 +90,7 @@ Works as an in-game overlay or OBS browser source.
 | Hide Early/Late Hit Error | `false` | Hide ms for Early/Late, show only for Perfect |
 | Show Perfect Hit Error | `false` | Show ms even on Perfect hits |
 | Always Show Hit Error (0ms) | `false` | Keep `0ms` visible between hits |
-| Hit Error Decimal Places | `2` | `0` → `16ms` · `1` → `16.6ms` · `2` → `16.67ms` |
+| Hit Error Decimal Places | `2` | `0`  `16ms` · `1`  `16.6ms` · `2`  `16.67ms` |
 | Hit Error Font Size | `64 px` | Size of the ms text |
 | Hit Error X-Offset | `0 px` | Horizontal position of ms text |
 | Hit Error Y-Offset | `0 px` | Vertical position of ms text |
@@ -102,9 +102,9 @@ Works as an in-game overlay or OBS browser source.
 
 | Setting | Default | Description |
 |---|---|---|
-| Early Color | `#0000ff` 🔵 | Color for early hits |
-| Late Color | `#ff0000` 🔴 | Color for late hits |
-| Perfect Color | `#ffffff` ⚪ | Color for perfect hit ms text |
+| Early Color | `#0000ff` | Color for early hits |
+| Late Color | `#ff0000` | Color for late hits |
+| Perfect Color | `#ffffff` | Color for perfect hit ms text |
 
 </details>
 
@@ -144,7 +144,7 @@ Works as an in-game overlay or OBS browser source.
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 tosu streams live game data over WebSocket. On each new hit, the overlay reads the latest entry from `hitErrors`, divides it by the current mod rate (e.g. DT = 1.5×), then compares the result against the Perfect window to decide which judgement to show.
 
@@ -160,7 +160,23 @@ tosu streams live game data over WebSocket. On each new hit, the overlay reads t
 
 ---
 
-## 📋 Compatibility
+## File Structure
+
+```
+timing-feedback/
+ index.html           # Overlay HTML
+ main.css             # Styles & CSS variables
+ main.js              # WebSocket logic & rendering
+ settings.json        # Plugin settings (read by tosu)
+ metadata.txt         # Plugin metadata
+ early.png            # (optional) Custom early image
+ late.png             # (optional) Custom late image
+ font.ttf             # (optional) Custom font file
+```
+
+---
+
+## Compatibility
 
 | | |
 |---|---|
@@ -172,8 +188,8 @@ tosu streams live game data over WebSocket. On each new hit, the overlay reads t
 
 ---
 
-## 🙏 Credits
+## Credits
 
-- **Author** — Albert
-- **Based on** — [breadles](https://github.com/breadles5) original concept
-- **Powered by** — [tosu](https://github.com/KotRikD/tosu) by KotRikD
+- **Author**  Albert
+- **Based on**  [breadles](https://github.com/breadles5) original concept
+- **Powered by**  [tosu](https://github.com/KotRikD/tosu) by KotRikD
