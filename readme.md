@@ -12,6 +12,10 @@
 Shows **EARLY / LATE** judgements and exact **millisecond hit error** after every note hit.  
 Works as an in-game overlay or OBS browser source.
 
+<br>
+
+![demo](demo.svg)
+
 </div>
 
 ---
