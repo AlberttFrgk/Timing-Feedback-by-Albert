@@ -77,7 +77,7 @@
         "title": "Font Size (px)",
         "description": "Changes main judgement text size.",
         "options": [],
-        "value": 64
+        "value": 32
     },
     {
         "uniqueID": "judgementOffsetX",
@@ -141,7 +141,7 @@
         "title": "Hit Error Font Size (px)",
         "description": "Changes the size of the exact hit error text.",
         "options": [],
-        "value": 64
+        "value": 32
     },
     {
         "uniqueID": "msOffsetX",
@@ -221,7 +221,7 @@
         "title": "Judgement Stroke Thickness (px)",
         "description": "",
         "options": [],
-        "value": 4
+        "value": 2
     },
     {
         "uniqueID": "msStrokeThickness",
@@ -229,7 +229,7 @@
         "title": "Hit Error Stroke Thickness (px)",
         "description": "",
         "options": [],
-        "value": 4
+        "value": 2
     },
     {
         "uniqueID": "useFadeAnimation",

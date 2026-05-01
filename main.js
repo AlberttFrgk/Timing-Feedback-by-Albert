@@ -74,10 +74,10 @@ let settings = {
     font: "Verdana",
     textEarly: "EARLY", textLate: "LATE",
     colorPerfect: "#ffffff", colorEarly: "#0000ff", colorLate: "#ff0000",
-    fontSize: 64, judgementOffsetX: 0, judgementOffsetY: 0, showMainJudgement: true,
+    fontSize: 32, judgementOffsetX: 0, judgementOffsetY: 0, showMainJudgement: true,
     showHitErrorMs: false, hideEarlyLateMs: false, showPerfectMs: false, alwaysShowHitError: false, hitErrorDecimals: 2, 
-    msFontSize: 64, msOffsetX: 0, msOffsetY: 0, 
-    useStrokeEffect: true, strokeThickness: 4, msStrokeThickness: 4,
+    msFontSize: 32, msOffsetX: 0, msOffsetY: 0, 
+    useStrokeEffect: true, strokeThickness: 2, msStrokeThickness: 2,
     useFadeAnimation: false, displayDuration: 400, fadeDuration: 400
 };
 
