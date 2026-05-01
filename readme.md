@@ -118,7 +118,6 @@ Works as an in-game overlay or OBS browser source.
 | Setting | Default | Description |
 |---|---|---|
 | Font Name | `Verdana` | Any Windows-installed font name |
-| Use Online Font (Goldman) | `false` | Load Goldman from Google Fonts |
 | Use Custom Font File | `false` | Load a font file from the plugin folder |
 | Custom Font File Name | `font.ttf` | Filename of your custom font |
 

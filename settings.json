@@ -192,14 +192,6 @@
         "value": "Verdana"
     },
     {
-        "uniqueID": "useOnlineFont",
-        "type": "checkbox",
-        "title": "Use Online Font (Goldman)",
-        "description": "Enable to use Google Goldman font (because it cool). This setting will be ignored if offline.",
-        "options": [],
-        "value": false
-    },
-    {
         "uniqueID": "useCustomFontFile",
         "type": "checkbox",
         "title": "Use Custom Font File",
@@ -213,7 +205,7 @@
         "title": "Custom Font File Name",
         "description": "",
         "options": [],
-        "value": "font.ttf"
+        "value": "Goldman-Bold.ttf"
     },
     {
         "uniqueID": "useStrokeEffect",

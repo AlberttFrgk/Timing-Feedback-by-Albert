@@ -70,8 +70,8 @@ const wsManager = new WebSocketManager(DEFAULT_HOST);
 let settings = {
     useCustomTimingWindow: false, customPerfectWindow: 16,
     useCustomImages: false, imageEarly: "early.png", imageLate: "late.png", imageSize: 64,
-    useCustomFontFile: false, customFontFileName: "font.ttf",
-    useOnlineFont: false, font: "Verdana",
+    useCustomFontFile: false, customFontFileName: "Goldman-Bold.ttf",
+    font: "Verdana",
     textEarly: "EARLY", textLate: "LATE",
     colorPerfect: "#ffffff", colorEarly: "#0000ff", colorLate: "#ff0000",
     fontSize: 64, judgementOffsetX: 0, judgementOffsetY: 0, showMainJudgement: true,
@@ -107,10 +107,6 @@ function applyFontSettings() {
             }
         `;
         fontStack = `'MyCustomOverlayFont', '${settings.font}', sans-serif`;
-    } else if (settings.useOnlineFont && navigator.onLine) {
-        fontStack = `'Goldman', '${settings.font}', sans-serif`;
-        const styleEl = document.getElementById("custom-font-style");
-        if (styleEl) styleEl.remove();
     }
     document.documentElement.style.setProperty("--judgement-font", fontStack);
 }
