@@ -38,8 +38,7 @@ Works as an in-game overlay or OBS browser source.
 ## Installation
 
 1. **Download** this repository as a ZIP (or `git clone` it)
-2. **Place** the folder inside your tosu `plugins/` directory
-3. **Open** tosu  navigate to the Plugins / Counters page
+2. **Place** the folder inside your tosu `/static` directory
 4. **Configure** settings to your preference (see below)
 5. **Add** the overlay URL as a Browser Source in OBS, or use it as an in-game overlay
 
